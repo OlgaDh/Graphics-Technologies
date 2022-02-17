@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- <?xml version="1.0" encoding="utf-8"?> -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Olga Durham">
+    <meta name="email" content="shap0011@algonquincollege.com">
+
+    <title>SVG Exploration</title>
+</head>
+
+<body id="body">
+    <!-- Generator: Adobe Illustrator 26.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1920 1500" style="enable-background:new 0 0 1920 1080;" xml:space="preserve">
+            <style type="text/css">
+                .st0{fill:rgb(87, 9, 139); stroke: rgb(250, 3, 3); stroke-width: 20;}
+                <!-- .st0:hover{fill:purple; stroke: rgb(243, 142, 142); stroke-width: 50;} -->
+
+                .st1{fill:blue; transition: transform 3s, fill 5s}
+                .st1:hover{fill:rgb(149, 149, 243); transform: scaleX(1.3); transition: transform 3s, fill 3s; stroke: darkblue; stroke-width: 15;}
+
+                .st2{fill:yellow; transition: transform 3s, fill 5s}
+                .st2:hover{fill:rgb(245, 245, 225); transform: scaleX(1.2); transition: transform 3s, fill 3s; stroke: rgb(170, 170, 3); stroke-width: 15;}
+
+                .st3{fill:magenta; transition: transform 3s, fill 5s}
+                .st3:hover{fill:rgb(252, 186, 252); transform: scaleX(0.6); transition: transform 3s, fill 3s; stroke: darkmagenta; stroke-width: 15;}
+
+                .st4{fill:orange; transition: transform 3s, fill 5s}
+                .st4:hover{fill:rgb(247, 229, 197); transform: scaleX(0.5); transition: transform 3s, fill 3s; stroke: darkorange; stroke-width: 15;}
+
+                .st5{fill:green; transition: transform 3s, fill 5s}
+                .st5:hover{fill:rgb(177, 241, 177); transform: scaleY(1.4); transition: transform 3s, fill 3s; stroke: darkgreen; stroke-width: 15;}
+
+                .st6{fill:cyan; transition: transform 3s, fill 5s}
+                .st6:hover{fill:rgb(207, 238, 238); transform: scaleY(0.2); transition: transform 3s, fill 3s; stroke: darkcyan; stroke-width: 15;}
+            </style>
+            <g>
+                <!-- purple circle -->
+                <circle id="circle" class="st0" cx="1020" cy="510" r="430" />
+            </g>
+            <g>
+                <!-- blue square -->
+                <rect id="square" x="1197" y="509.2" class="st1" width="188.7" height="188.5"/>
+            </g>
+            <g>
+                <!-- yellow triangle -->
+                <polygon id="triangle" class="st2" points="1170.8,428.5 1291.4,219.5 1412.1,428.5 	"/>
+            </g>
+            <g>
+                <!-- magenta star -->
+                <polygon id="star" class="st3" points="807.7,412 745.4,469.6 751.6,385 667.7,372.1 737.7,324.2 695.4,250.6 776.6,275.4 807.7,196.5 
+                    838.9,275.4 920.1,250.6 877.8,324.2 947.8,372.1 863.9,385 870.1,469.6 	"/>
+            </g>
+            <g>
+                <!-- orange hexagon -->
+                <polygon id="hexagon" class="st4" points="713.3,728.1 658.1,616 727.6,512.2 852.2,520.4 907.4,632.5 838,736.3 	"/>
+            </g>
+            <g>
+                <!-- green elipce -->
+                <path id="elipce" class="st5" d="M968.6,889c-20.3,0-37.2-6.3-49-18.1c-17.6-17.6-22.6-45.7-14.1-79.1c8.5-33.5,29.6-68.3,59.3-98
+                    c39.1-39.1,88.1-63.3,128-63.3c20.3,0,37.2,6.3,49,18.1c17.6,17.6,22.6,45.7,14.1,79.1c-8.5,33.5-29.6,68.3-59.3,98
+                    C1057.6,864.7,1008.6,889,968.6,889z"/>
+            </g>
+            <g>
+                <!-- cyan rectangle -->
+                <rect id="rectangle" x="981" y="155" class="st6" width="134" height="266"/>
+            </g>
+            <script>
+                var circle = document.getElementById("circle");
+                var square = document.getElementById("scuare");
+                var triangle = document.getElementById("triangle");
+                var star = document.getElementById("star");
+                var hexagon = document.getElementById("hexagon");
+                var elipce = document.getElementById("elipce");
+                var rectangle = document.getElementById("rectangle");
+
+                body.addEventListener ("mousedown",function(){
+                    alert("hacked!");
+                    circle.setAttribute("r", "50"); 
+                    
+                    });  
+                    
+                circle.addEventListener ("mouseenter",function(){
+                    circle.setAttribute("r", "430"); 
+                    circle.setAttribute("opacity", "0.5"); 
+                    });   
+                    
+                circle.addEventListener ("mouseout",function(){
+                    circle.setAttribute("r", "430"); 
+                    circle.setAttribute("opacity", "1"); 
+                    }); 
+            </script>
+            </svg>
+
+</html>
